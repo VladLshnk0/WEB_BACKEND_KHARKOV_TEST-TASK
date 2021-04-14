@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Новый товар</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Укажите информацию о товаре</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type = "hidden" name="id" value="{{item.id}}">
+        <p>Название: <input type="text" name="name" value="{{item.name}}"/></p>
+        <p>Цена: <input type="text" name="price" value="{{item.price}}"/></p>
+        <p>Фото: <input type="file" name="picture" value="{{item.picture}}"></p>
+        <button type="submit">Выставить товар</button>
+    </form>
+</body>
+<html>

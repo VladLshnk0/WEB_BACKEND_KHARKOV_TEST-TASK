@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Регистрация</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Регистрация</h1>
+    <form method="POST">
+        <input type = "hidden" name="id" value="{{user.id}}">
+        <p>Имя: <input type="text" name="name" value="{{user.name}}"/></p>
+        <p>Email: <input type="email" name="email" value="{{user.email}}"/></p>
+        <p>Пароль: <input type="text" name="pass" value="{{user.pass}}"/></p>
+        <p>Номер телефона: <input type="text" name="number" value="{{user.number}}"/></p>
+        <button type="submit">Зарегестрироваться</button>
+    </form>
+</body>
+<html>

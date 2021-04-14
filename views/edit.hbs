@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Редактировать</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Измените информацию о товаре</h1>
+    <form action="/edit" method="POST" enctype="multipart/form-data">
+        <input type = "hidden" name="id" value="{{item.ID}}">
+        <p>Название: <input type="text" name="name" value="{{item.NAME}}"/></p>
+        <p>Цена: <input type="text" name="price" value="{{item.PRICE}}"/></p>
+        <button type="submit">Сохранить</button>
+    </form>
+</body>
+<html>

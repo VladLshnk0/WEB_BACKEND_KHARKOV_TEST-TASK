@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Товары</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>Актуальные товары</h1>
+    <p><a href="/addItem">Добавить товар</a></p>
+    <table>
+        <tr><th>Название</th><th>Цена</th><th></th></tr>
+        {{#each items}}
+            <tr>
+                <td>{{this.NAME}}</td>
+                <td>{{this.PRICE}}</td>
+                <td>
+                    <a title="/item/{{this.ID}}" href="/item/{{this.ID}}">Посмотреть</a>
+                </td>
+            </tr>
+        {{/each}}
+    </table>
+</body>
+<html>

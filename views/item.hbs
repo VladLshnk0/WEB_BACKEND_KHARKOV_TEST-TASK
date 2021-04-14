@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{item.NAME}}</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h1>{{item.NAME}}</h1>
+        <input type = "hidden" name="id" value="{{id}}">
+        <p>Имя: {{item.NAME}}</p>
+        <p>Цена: {{item.PRICE}}</p>
+        <p><img src="./pics/{{item.PICTURE}}"></p>
+        <a href="/edit/{{item.ID}}"> Редактировать</a>
+        <form action="/delete/{{item.ID}}" method="POST" style="display:inline;">
+            <input type="submit" value="Удалить" />
+        </form>
+        <a title="клац" href="/addItem">Добавить товар</a>
+</body>
+<html>
